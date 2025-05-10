@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GUB</title>
+  <link rel="shortcut icon" href="./img/GUB.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body >
+<!-- Header Section -->
+<div class="container-fluid bg-success bg-opacity-10 py-2">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+      <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center mb-2 mb-md-0">
+        <a href="index.html" class="me-2"><img src="./img/Untitled-1.png" alt="Logo 1" height="60" /></a>
+      </div>
+      <div class="col-12 col-md-5 mb-2 mb-md-0">
+        <h3 class="had-p m-0 fw-semibold text-danger">৪ বছর মেয়াদী ভর্তি চলিতেছে</h3>
+      </div>
+      <div class="col-12 col-md-3 text-center text-md-end">
+        <a class="btn btn-primary" href="apply.html">Apply Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Navigation Bar -->
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ass">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#us">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#mag">Message</a></li>
+        <li class="nav-item"><a class="nav-link" href="#dss">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login or Sign-Up</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Result</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Notice</a></li>
+        <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+        <li class="nav-item"><a class="nav-link" href="id.html">Students</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+<!-- start -->
+<section class="bg-warning py-2">
+  <div class="container">
+    <marquee behavior="scroll" direction="left" scrollamount="5" class="fw-bold fs-6 text-dark" onmouseover="this.stop()" onmouseout="this.start()">
+      <img src="./img/GUB.png" alt="Book Icon" style="height: 36px;  margin-right: 10px;">
+      "GUB তে আপনাকে  স্বাগতম "
+    </marquee>
+  </div>
+</section>
+<div class="container my-5">
+  <h2 class="text-center mb-4">Admission Form</h2>
+  <form>
+    <!-- Applicant Details -->
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Name of Applicant *</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="col-md-6">
+        <label for="course" class="form-label">Course Applied For *</label>
+        <select class="form-select" id="course" required>
+           <option value="">Choose Course</option>
+      <option value="CSE">CSE</option>
+      <option value="EEE">EEE</option>
+      <option value="BBA">BBA</option>
+      <option value="MBA">MBA</option>
+      <option value="EMBA">EMBA</option>
+      <option value="LLB">LLB</option>
+      <option value="LLM">LLM</option>
+      <option value="ENGLISH">ENGLISH</option>
+      <option value="LIBRARY AND SOCIAL SCIENCE">LIBRARY AND SOCIAL SCIENCE</option>
+        </select>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="father" class="form-label">Father's Name *</label>
+        <input type="text" class="form-control" id="father" required>
+      </div>
+      <div class="col-md-6">
+        <label for="mother" class="form-label">Mother's Name *</label>
+        <input type="text" class="form-control" id="mother" required>
+      </div>
+    </div>
+    <!-- Contact Info -->
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email *</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="col-md-6">
+        <label for="phone" class="form-label">Phone/Mobile *</label>
+        <input type="tel" class="form-control" id="phone" required>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <label for="gender" class="form-label">Gender *</label>
+        <select class="form-select" id="gender" required>
+          <option value="">Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="dob" class="form-label">Date of Birth *</label>
+        <input type="date" class="form-control" id="dob" required>
+      </div>
+      <div class="col-md-4">
+        <label for="marital" class="form-label">Marital Status *</label>
+        <select class="form-select" id="marital" required>
+          <option value="">Select Marital Status</option>
+          <option>Single</option>
+          <option>Married</option>
+        </select>
+      </div>
+    </div>
+    <!-- Nationality, Religion -->
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="nationality" class="form-label">Nationality *</label>
+        <input type="text" class="form-control" id="nationality" required>
+      </div>
+      <div class="col-md-6">
+        <label for="religion" class="form-label">Religion *</label>
+        <input type="text" class="form-control" id="religion" required>
+      </div>
+    </div>
+    <!-- Address -->
+    <div class="mb-3">
+      <label for="presentAddress" class="form-label">Present Address *</label>
+      <textarea class="form-control" id="presentAddress" rows="2" required></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="permanentAddress" class="form-label">Permanent Address *</label>
+      <textarea class="form-control" id="permanentAddress" rows="2" required></textarea>
+    </div>
+    <!-- SSC Info -->
+<h5 class="mt-4">SSC Examination Information</h5>
+<div class="row mb-3">
+  <div class="col-md-2">
+    <label for="sscRoll" class="form-label">Roll No *</label>
+    <input type="text" class="form-control" id="sscRoll" required>
+  </div>
+  <div class="col-md-2">
+    <label for="sscReg" class="form-label">Reg. No *</label>
+    <input type="text" class="form-control" id="sscReg" required>
+  </div>
+  <div class="col-md-2">
+    <label for="sscYear" class="form-label">Passing Year *</label>
+    <input type="text" class="form-control" id="sscYear" required>
+  </div>
+  <div class="col-md-2">
+    <label for="sscGPA" class="form-label">GPA *</label>
+    <input type="text" class="form-control" id="sscGPA" required>
+  </div>
+  <div class="col-md-4">
+    <label for="sscInstitute" class="form-label">Institution Name *</label>
+    <input type="text" class="form-control" id="sscInstitute" required>
+  </div>
+</div>
+
+<!-- HSC Info -->
+<h5 class="mt-4">HSC Examination Information</h5>
+<div class="row mb-3">
+  <div class="col-md-2">
+    <label for="hscRoll" class="form-label">Roll No *</label>
+    <input type="text" class="form-control" id="hscRoll" required>
+  </div>
+  <div class="col-md-2">
+    <label for="hscReg" class="form-label">Reg. No *</label>
+    <input type="text" class="form-control" id="hscReg" required>
+  </div>
+  <div class="col-md-2">
+    <label for="hscYear" class="form-label">Passing Year *</label>
+    <input type="text" class="form-control" id="hscYear" required>
+  </div>
+  <div class="col-md-2">
+    <label for="hscGPA" class="form-label">GPA *</label>
+    <input type="text" class="form-control" id="hscGPA" required>
+  </div>
+  <div class="col-md-4">
+    <label for="hscInstitute" class="form-label">Institution Name *</label>
+    <input type="text" class="form-control" id="hscInstitute" required>
+  </div>
+</div>
+
+    <!-- Quota -->
+    <div class="mb-3">
+      <label for="quota" class="form-label">Quota (if any)</label>
+      <select class="form-select" id="quota">
+        <option value="">None</option>
+        <option>Freedom Fighter</option>
+        <option>Disabled</option>
+        <option>Tribal</option>
+        <option>Others</option>
+      </select>
+    </div>
+    <!-- Source of info -->
+    <div class="mb-3">
+      <label for="gubRef" class="form-label">How did you know about this institute? *</label>
+      <input type="text" class="form-control" id="gubRef" required>
+    </div>
+    <!-- Optional Experience -->
+    <div class="mb-3">
+      <label for="experience" class="form-label">Experience (Optional)</label>
+      <textarea class="form-control" id="experience" rows="2"></textarea>
+    </div>
+    <!-- Photo Upload -->
+   <div class="mb-3">
+  <label for="sscMarksheet" class="form-label">SSC Marksheet *</label>
+  <input type="file" class="form-control" id="sscMarksheet" name="sscMarksheet" accept="image/*" required>
+</div>
+
+<div class="mb-3">
+  <label for="hscMarksheet" class="form-label">HSC Marksheet *</label>
+  <input type="file" class="form-control" id="hscMarksheet" name="hscMarksheet" accept="image/*" required>
+</div>
+
+<div class="mb-3">
+  <label for="photoUpload" class="form-label">Photo Upload *</label>
+  <input type="file" class="form-control" id="photoUpload" name="photoUpload" accept="image/*" required>
+</div>
+
+<!-- Submit -->
+<div class="text-center">
+  <button type="submit" class="btn btn-primary px-4">Submit Application</button>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-4">
+  <div class="container">
+    <div class="row">
+      <!-- Contact Info -->
+      <div class="col-md-3 mb-4">
+        <h5>Contact Us</h5>
+        <p><strong>Address:</strong> Global University Bangladesh,Barishal</p>
+        <p><strong>Phone:</strong> +88017######</p>
+        <p><strong>Email:</strong> <a href="mailto:dipto2512@gmail.com" class="text-white">info@globaluniversity.edu.bd</a></p>
+      </div>
+      <!-- Useful Links -->
+      <div class="col-md-3 mb-4">
+        <h5>Useful Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white">Admission</a></li>
+          <li><a href="#" class="text-white">Faculty</a></li>
+          <li><a href="#" class="text-white">Location</a></li>
+        </ul>
+      </div>
+      <!-- Map -->
+      <div class="col-md-3 mb-4">
+        <h5>Location</h5>
+        <div class="ratio ratio-4x3">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22427.472615384762!2d90.348899!3d22.713155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755358576061b73%3A0xbfa6d427e59e9c28!2sGlobal%20University%20Bangladesh!5e1!3m2!1sen!2sbd!4v1746866211292!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <!-- Social Links -->
+      <div class="col-md-3 mb-4">
+        <h5>Follow Us</h5>
+        <ul class="list-unstyled d-flex gap-3 flex-wrap">
+          <li><a href="#" class="text-white"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#" class="text-white"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" class="text-white"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#" class="text-white"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" class="text-white"><i class="fab fa-telegram"></i></a></li>
+          <li><a href="https://wa.me/8801XXXXXXXXX" class="text-white"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom border-top pt-3 text-center">
+      <p class="mb-0">&copy; 2025 Global University Bangladesh,Barishal.</p>
+      <small>Developed by <strong>Dipto-Das</strong></small>
+    </div>
+  </div>
+</footer>
+<!-- JS Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
